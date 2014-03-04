@@ -29,11 +29,14 @@
 
 	<servlet-mapping>
 		<servlet-name>hdable-dispatcher</servlet-name>
-		<url-pattern>/</url-pattern>
+		<!--url-pattern>/</url-pattern-->
+		<url-pattern>*.infra</url-pattern>
 	</servlet-mapping>
 
-	
+
+
 	<!-- SiteMesh  -->
+	<!-- 사이트 메쉬 적용시 주석 해제 -->
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>

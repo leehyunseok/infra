@@ -158,16 +158,26 @@ public class HelloController {
 		return articles;
 	}
 	
-	/* ERROR */
 	@RequestMapping(value = "/myBatis" , method = RequestMethod.GET  )
 	public String jsonGetMyBatis(ModelMap map ) {
 		
 	List<Parent> parents = service.selectAllParent()  ;
 				
 		map.addAttribute("grid",parents);
-
 		
 		return "jsonView" ;
+	}
+	
+	
+	
+	@RequestMapping(value = "/jqGrid" , method = RequestMethod.GET  )
+	public String jsonGetJqGrid(@RequestParam(value="type",required=false, defaultValue="json") String type , ModelMap map ) {
+
+		if("json".equals(type)) {
+			return "jqGrid" ;	
+		} else {
+			return "jqGridJsonp" ;
+		}
 	}
 	
 	

@@ -31,7 +31,7 @@
             series: [{},{}]
         } ;
 
-        var url =  "http://localhost:8080/mvcWeb/jsonViewChart";
+        var url =  "http://localhost:8080/infra/jsonViewChart";
 
         $.getJSON(url,  function(data) {
             options.series[0].name = data.grid[0].name;
