@@ -6,6 +6,11 @@
 	<!--excludes>
 		<pattern>/index.do</pattern>
 	</excludes -->
+	<excludes>
+		<!--pattern>/*/index.jsp</pattern-->
+    	<pattern>/index.jsp</pattern>
+    	<pattern>/layoutit/src/index.jsp</pattern>
+    </excludes>
 	
 	<decorator name="main" page="mesh_main.jsp">
 		<pattern>/*</pattern>
