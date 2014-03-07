@@ -31,7 +31,7 @@
             series: [{},{}]
         } ;
 
-        var url =  "http://localhost:8080/infra/jsonViewChart";
+        var url =  "http://localhost:8080/infra/jsonViewChartData.infra";
 
         $.getJSON(url,  function(data) {
             options.series[0].name = data.grid[0].name;
@@ -46,5 +46,8 @@
 
 </script>
 
+
+<a href="http://www.highcharts.com/demo/spline-plot-bands">highchart</a>
+</br></br>
 </body>
 </html>

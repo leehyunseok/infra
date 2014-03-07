@@ -52,5 +52,5 @@ $(window.document).ready( function() {
 	<a href="http://localhost:8080/infra/jsonViewObject.infra">jsonData</a> </br>
 	<a href="http://apis.daum.net/socialpick/search?output=json">다음소셜픽</a> </br>
 	<a href="http://localhost:8080/infra/jqGrid.infra?type=jsonp">소셜픽그리드</a> </br>
-
+	<a href="http://www.trirand.net/demo/php/jqgrid/">jqGrid</a> </br>
 </body>

@@ -8,6 +8,7 @@
 	</excludes -->
 	<excludes>
 		<!--pattern>/*/index.jsp</pattern-->
+    	<pattern>/index.html</pattern>
     	<pattern>/index.jsp</pattern>
     	<pattern>/layoutit/src/index.jsp</pattern>
     </excludes>

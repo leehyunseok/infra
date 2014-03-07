@@ -10,10 +10,10 @@
 </head>
 
 <body>
-	TOP
+	SiteMesh TOP
 	</br>
 	<decorator:body />
 	</br>
-	BOTTOM
+	SiteMesh BOTTOM
 </body>
 </html>

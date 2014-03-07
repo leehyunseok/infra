@@ -95,7 +95,7 @@ public class HelloController {
 	}
 	
 //	JsonViewChart
-	@RequestMapping(value="/jsonViewChart")
+	@RequestMapping(value="/jsonViewChartData")
 	public String jsonViewChart(ModelMap map) {
 
 		List<JsonViewChart> lists = new ArrayList<JsonViewChart>();
@@ -128,8 +128,8 @@ public class HelloController {
 	
 	
 //	PDFView
-//	http://localhost:8080/mvcWeb/get.json
-//	http://localhost:8080/mvcWeb/get.pdf
+//	http://localhost:8080/infra/get.json
+//	http://localhost:8080/infra/get.pdf
 	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	public LinkedList<Article> get(Model model) {                 
 				
@@ -179,7 +179,6 @@ public class HelloController {
 			return "jqGridJsonp" ;
 		}
 	}
-	
 	
 
 }
